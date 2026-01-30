@@ -17,7 +17,6 @@
 	       <include  name = "deleteBugById"/>
        </methods>
        </class>
-    </classes>
-    
+    </classes>    
   </test> <!-- Test -->
 </suite> <!-- Suite -->
