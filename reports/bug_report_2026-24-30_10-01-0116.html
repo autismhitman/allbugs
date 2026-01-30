@@ -1,0 +1,846 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>DocumentReport</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">ExtentReport for API Testing</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 30, 2026 10:24:34 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">fetchAllBugs is started</p>
+            <p class="text-sm">
+              <span>10:24:38 am</span> / <span>00:00:16:196</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">fetchAllBugs is started</h5>
+<span class='badge badge-success'>01.30.2026 10:24:38 am</span>
+<span class='badge badge-danger'>01.30.2026 10:24:54 am</span>
+<span class='badge badge-default'>00:00:16:196</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:24:46 am</td>
+        <td>
+          <pre><b>REQUEST DETAILS:</b>
+<b>URI:</b> http://localhost:8090
+<b>METHOD:</b> GET
+<b>CONTENT TYPE:</b> application/json
+<b>HEADERS:</b> [Accept=*/*, Content-Type=application/json]
+<b>BODY:</b> None</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:24:51 am</td>
+        <td>
+          <pre><b>RESPONSE</b>
+<b>Status:</b> 200
+<b>Content Type:</b> application/json
+<b>Body:</b>
+[
+    {
+        "createdBy": "Jamie Robinson",
+        "priority": 0,
+        "severity": "high",
+        "title": "Login Failure: User cannot log in with valid credentials,redirected back to the login page.",
+        "completed": true,
+        "bugId": "689ffc86-440f-46f1-8480-17f25472565e",
+        "createdOn": "2026-01-30T09:59:04.3641517",
+        "updatedOn": "2026-01-30T09:59:04.3641517"
+    },
+    {
+        "createdBy": "Jamie Crusoe",
+        "priority": 1,
+        "severity": "medium",
+        "title": "Search Non-Functionality: Search button remains unresponsive when clicked after entering a query.",
+        "completed": false,
+        "bugId": "18dd104e-832c-4f07-9275-18e44ea7cc2c",
+        "createdOn": "2026-01-30T09:59:04.3641517",
+        "updatedOn": "2026-01-30T09:59:04.3641517"
+    },
+    {
+        "createdBy": "Jamie keith",
+        "priority": 2,
+        "severity": "low",
+        "title": "Add to Cart Error: Add to Cart button fails to update the cart counter or add the item.",
+        "completed": true,
+        "bugId": "913e2038-6b1e-4358-969f-0d09d7deec3f",
+        "createdOn": "2026-01-30T09:59:04.3641517",
+        "updatedOn": "2026-01-30T09:59:04.3641517"
+    },
+    {
+        "createdBy": "Jamie Sharma",
+        "priority": 3,
+        "severity": "critical",
+        "title": "Checkout Crash: Application crashes when the Place Order button is clicked.",
+        "completed": false,
+        "bugId": "57bfefea-1b4a-4709-b7e6-b0ac310df302",
+        "createdOn": "2026-01-30T09:59:04.3641517",
+        "updatedOn": "2026-01-30T09:59:04.3641517"
+    },
+    {
+        "createdBy": "Jamie Smith",
+        "priority": 0,
+        "severity": "high",
+        "title": "Registration Loop: User is prompted to register again after a successful account creation.",
+        "completed": true,
+        "bugId": "b165bee5-d8c3-4e25-800f-1698f0dbb1d7",
+        "createdOn": "2026-01-30T09:59:04.3641517",
+        "updatedOn": "2026-01-30T09:59:04.3641517"
+    },
+    {
+        "createdBy": "Mark Robinson",
+        "priority": 1,
+        "severity": "medium",
+        "title": "Incorrect Calculation: Grand total in the shopping cart does not include the applied tax rate.",
+        "completed": false,
+        "bugId": "03b584e0-27a9-4c78-af27-eb4aa7a1662a",
+        "createdOn": "2026-01-30T09:59:04.3651538",
+        "updatedOn": "2026-01-30T09:59:04.3651538"
+    },
+    {
+        "createdBy": "Mark Crusoe",
+        "priority": 2,
+        "severity": "low",
+        "title": "Broken Redirection: Clicking the Terms of Service link redirects the user to a 404 Error page.",
+        "completed": true,
+        "bugId": "64f6441b-7393-4d24-9a3c-9665cfcb0d25",
+        "createdOn": "2026-01-30T09:59:04.3651538",
+        "updatedOn": "2026-01-30T09:59:04.3651538"
+    },
+    {
+        "createdBy": "Mark keith",
+        "priority": 3,
+        "severity": "critical",
+        "title": "Missing Validation: User can submit a contact form without filling in the mandatory Email field.",
+        "completed": false,
+        "bugId": "f5fd057f-99dc-49ed-9bb6-3dce56b92d80",
+        "createdOn": "2026-01-30T09:59:04.3651538",
+        "updatedOn": "2026-01-30T09:59:04.3651538"
+    },
+    {
+        "createdBy": "Mark Sharma",
+        "priority": 0,
+        "severity": "high",
+        "title": "Text Overlap: Button text overlaps with the icon in the mobile view of the Navigation Bar.",
+        "completed": true,
+        "bugId": "94a8a295-2d3e-4e79-8317-570da9c166e6",
+        "createdOn": "2026-01-30T09:59:04.3651538",
+        "updatedOn": "2026-01-30T09:59:04.3651538"
+    },
+    {
+        "createdBy": "Mark Smith",
+        "priority": 1,
+        "severity": "medium",
+        "title": "Alignment Issue: Company logo is misaligned to the left in Safari browsers.",
+        "completed": false,
+        "bugId": "47ebb5ad-8d91-4237-bbdc-7af7d253054e",
+        "createdOn": "2026-01-30T09:59:04.3661528",
+        "updatedOn": "2026-01-30T09:59:04.3661528"
+    },
+    {
+        "createdBy": "Oliver Robinson",
+        "priority": 2,
+        "severity": "low",
+        "title": "Truncated Text: Product descriptions are cut off without an ellipsis in the Grid View.",
+        "completed": true,
+        "bugId": "5f1cd5fe-e53d-40ad-bf3e-001bc40803b2",
+        "createdOn": "2026-01-30T09:59:04.3661528",
+        "updatedOn": "2026-01-30T09:59:04.3661528"
+    },
+    {
+        "createdBy": "Oliver Crusoe",
+        "priority": 3,
+        "severity": "critical",
+        "title": "Broken Image: Image placeholders appear instead of product photos on the New Arrivals page.",
+        "completed": false,
+        "bugId": "a4f16860-8e22-43dc-8958-7ac95f939acf",
+        "createdOn": "2026-01-30T09:59:04.3661528",
+        "updatedOn": "2026-01-30T09:59:04.3661528"
+    },
+    {
+        "createdBy": "Oliver keith",
+        "priority": 0,
+        "severity": "high",
+        "title": "Login Failure: User cannot log in with valid credentials; redirected back to the login page.",
+        "completed": true,
+        "bugId": "271294ac-86fc-494e-ad72-cd2f17194816",
+        "createdOn": "2026-01-30T09:59:04.3661528",
+        "updatedOn": "2026-01-30T09:59:04.3661528"
+    },
+    {
+        "createdBy": "Oliver Sharma",
+        "priority": 1,
+        "severity": "medium",
+        "title": "Search Non-Functionality: Search button remains unresponsive when clicked after entering a query.",
+        "completed": false,
+        "bugId": "a6ad0497-1162-46ac-8977-da959fc9f53f",
+        "createdOn": "2026-01-30T09:59:04.3661528",
+        "updatedOn": "2026-01-30T09:59:04.3661528"
+    },
+    {
+        "createdBy": "Oliver Smith",
+        "priority": 2,
+        "severity": "low",
+        "title": "Add to Cart Error: Add to Cart button fails to update the cart counter or add the item.",
+        "completed": true,
+        "bugId": "1e633cef-66e9-457b-bcb6-288ab461c3bb",
+        "createdOn": "2026-01-30T09:59:04.3661528",
+        "updatedOn": "2026-01-30T09:59:04.3661528"
+    },
+    {
+        "createdBy": "Peter Robinson",
+        "priority": 3,
+        "severity": "critical",
+        "title": "Checkout Crash: Application crashes when the Place Order button is clicked.",
+        "completed": false,
+        "bugId": "885b2fd1-7357-4853-8c02-49e427313773",
+        "createdOn": "2026-01-30T09:59:04.3661528",
+        "updatedOn": "2026-01-30T09:59:04.3661528"
+    },
+    {
+        "createdBy": "Peter Crusoe",
+        "priority": 0,
+        "severity": "high",
+        "title": "Registration Loop: User is prompted to register again after a successful account creation.",
+        "completed": true,
+        "bugId": "da12e160-fa11-4597-9c3c-e76b49e8d3a2",
+        "createdOn": "2026-01-30T09:59:04.3661528",
+        "updatedOn": "2026-01-30T09:59:04.3661528"
+    },
+    {
+        "createdBy": "Peter keith",
+        "priority": 1,
+        "severity": "medium",
+        "title": "Incorrect Calculation: Grand total in the shopping cart does not include the applied tax rate.",
+        "completed": false,
+        "bugId": "44df96df-bf3f-4f0c-8086-c7f48f711acd",
+        "createdOn": "2026-01-30T09:59:04.3661528",
+        "updatedOn": "2026-01-30T09:59:04.3661528"
+    },
+    {
+        "createdBy": "Peter Sharma",
+        "priority": 2,
+        "severity": "low",
+        "title": "Broken Redirection: Clicking the Terms of Service link redirects the user to a 404 Error page.",
+        "completed": true,
+        "bugId": "c6808226-71a8-421c-bab1-1c54ac570345",
+        "createdOn": "2026-01-30T09:59:04.3671538",
+        "updatedOn": "2026-01-30T09:59:04.3671538"
+    },
+    {
+        "createdBy": "Peter Smith",
+        "priority": 3,
+        "severity": "critical",
+        "title": "Missing Validation: User can submit a contact form without filling in the mandatory Email field.",
+        "completed": false,
+        "bugId": "a523d858-0052-4673-836b-4c6a6356d5c8",
+        "createdOn": "2026-01-30T09:59:04.3671538",
+        "updatedOn": "2026-01-30T09:59:04.3671538"
+    },
+    {
+        "createdBy": "Germain Robinson",
+        "priority": 0,
+        "severity": "high",
+        "title": "Text Overlap: Button text overlaps with the icon in the mobile view of the Navigation Bar.",
+        "completed": true,
+        "bugId": "12aa33d5-8cac-4757-9e18-e709c5b223e2",
+        "createdOn": "2026-01-30T09:59:04.3671538",
+        "updatedOn": "2026-01-30T09:59:04.3671538"
+    },
+    {
+        "createdBy": "Germain Crusoe",
+        "priority": 1,
+        "severity": "medium",
+        "title": "Alignment Issue: Company logo is misaligned to the left in Safari browsers.",
+        "completed": false,
+        "bugId": "5c7cf6e5-614c-415f-b552-1c9552ed2a4e",
+        "createdOn": "2026-01-30T09:59:04.3671538",
+        "updatedOn": "2026-01-30T09:59:04.3671538"
+    },
+    {
+        "createdBy": "Germain keith",
+        "priority": 2,
+        "severity": "low",
+        "title": "Truncated Text: Product descriptions are cut off without an ellipsis in the Grid View.",
+        "completed": true,
+        "bugId": "5b8e2021-538c-48d4-8139-bfbf9ea3b28e",
+        "createdOn": "2026-01-30T09:59:04.3671538",
+        "updatedOn": "2026-01-30T09:59:04.3671538"
+    },
+    {
+        "createdBy": "Germain Sharma",
+        "priority": 3,
+        "severity": "critical",
+        "title": "Broken Image: Image placeholders appear instead of product photos on the New Arrivals page.",
+        "completed": false,
+        "bugId": "854d47f6-5ba6-4665-8e06-e817f760d58d",
+        "createdOn": "2026-01-30T09:59:04.3671538",
+        "updatedOn": "2026-01-30T09:59:04.3671538"
+    },
+    {
+        "createdBy": "Germain Smith",
+        "priority": 0,
+        "severity": "high",
+        "title": "Inconsistent Font: The About Us section uses a different font family than the rest of the application.",
+        "completed": true,
+        "bugId": "4c34f70b-3107-465b-810f-719eee4e2f1b",
+        "createdOn": "2026-01-30T09:59:04.3671538",
+        "updatedOn": "2026-01-30T09:59:04.3671538"
+    }
+]
+<b>Response Headers:</b><br><b>Content-Type:</b> application/json<br><b>Transfer-Encoding:</b> chunked<br><b>Date:</b> Fri, 30 Jan 2026 04:54:50 GMT<br><b>Keep-Alive:</b> timeout=60<br><b>Connection:</b> keep-alive</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:24:51 am</td>
+        <td>
+          <a href='1769748891443.json' target='_blank'>Click to view full JSON response file</a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:24:54 am</td>
+        <td>
+          <span class='badge white-text green'>fetchAllBugs  is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">createBug is started</p>
+            <p class="text-sm">
+              <span>10:24:54 am</span> / <span>00:00:04:754</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">createBug is started</h5>
+<span class='badge badge-success'>01.30.2026 10:24:54 am</span>
+<span class='badge badge-danger'>01.30.2026 10:24:59 am</span>
+<span class='badge badge-default'>00:00:04:754</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:24:55 am</td>
+        <td>
+          <pre><b>REQUEST DETAILS:</b>
+<b>URI:</b> http://localhost:8090
+<b>METHOD:</b> POST
+<b>CONTENT TYPE:</b> application/json
+<b>HEADERS:</b> [Accept=*/*, Content-Type=application/json]
+<b>BODY:</b> {"completed":false,"createdBy":"Shankar Jones","priority":2,"severity":"Medium","title":"Button not working in my profile section"}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:24:55 am</td>
+        <td>
+          <pre><b>RESPONSE</b>
+<b>Status:</b> 201
+<b>Content Type:</b> application/json
+<b>Body:</b>
+{
+    "createdBy": "Shankar Jones",
+    "priority": 2,
+    "severity": "Medium",
+    "title": "Button not working in my profile section",
+    "completed": false,
+    "bugId": "d5d93115-2001-4262-8609-1b245ca57063",
+    "createdOn": "2026-01-30T10:24:55.5961053",
+    "updatedOn": "2026-01-30T10:24:55.5961053"
+}
+<b>Response Headers:</b><br><b>Content-Type:</b> application/json<br><b>Transfer-Encoding:</b> chunked<br><b>Date:</b> Fri, 30 Jan 2026 04:54:55 GMT<br><b>Keep-Alive:</b> timeout=60<br><b>Connection:</b> keep-alive</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:24:55 am</td>
+        <td>
+          <a href='1769748895614.json' target='_blank'>Click to view full JSON response file</a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:24:59 am</td>
+        <td>
+          <span class='badge white-text green'>createBug  is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">updateBug is started</p>
+            <p class="text-sm">
+              <span>10:24:59 am</span> / <span>00:00:00:678</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">updateBug is started</h5>
+<span class='badge badge-success'>01.30.2026 10:24:59 am</span>
+<span class='badge badge-danger'>01.30.2026 10:25:00 am</span>
+<span class='badge badge-default'>00:00:00:678</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:24:59 am</td>
+        <td>
+          <pre><b>REQUEST DETAILS:</b>
+<b>URI:</b> http://localhost:8090
+<b>METHOD:</b> PUT
+<b>CONTENT TYPE:</b> application/json
+<b>HEADERS:</b> [Accept=*/*, Content-Type=application/json]
+<b>BODY:</b> {"completed":false,"createdBy":"Shankar JonesUpdate","priority":2,"severity":"High","title":"Button not working in my profile section"}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:24:59 am</td>
+        <td>
+          <pre><b>RESPONSE</b>
+<b>Status:</b> 200
+<b>Content Type:</b> application/json
+<b>Body:</b>
+{
+    "createdBy": "Shankar JonesUpdate",
+    "priority": 2,
+    "severity": "High",
+    "title": "Button not working in my profile section",
+    "completed": false,
+    "bugId": "d5d93115-2001-4262-8609-1b245ca57063",
+    "createdOn": "2026-01-30T10:24:55.5961053",
+    "updatedOn": "2026-01-30T10:24:59.9621016"
+}
+<b>Response Headers:</b><br><b>Content-Type:</b> application/json<br><b>Transfer-Encoding:</b> chunked<br><b>Date:</b> Fri, 30 Jan 2026 04:54:59 GMT<br><b>Keep-Alive:</b> timeout=60<br><b>Connection:</b> keep-alive</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:24:59 am</td>
+        <td>
+          <a href='1769748899976.json' target='_blank'>Click to view full JSON response file</a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:25:00 am</td>
+        <td>
+          <span class='badge white-text green'>updateBug  is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">fetchBugById is started</p>
+            <p class="text-sm">
+              <span>10:25:00 am</span> / <span>00:00:00:487</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">fetchBugById is started</h5>
+<span class='badge badge-success'>01.30.2026 10:25:00 am</span>
+<span class='badge badge-danger'>01.30.2026 10:25:00 am</span>
+<span class='badge badge-default'>00:00:00:487</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:25:00 am</td>
+        <td>
+          <pre><b>REQUEST DETAILS:</b>
+<b>URI:</b> http://localhost:8090
+<b>METHOD:</b> GET
+<b>CONTENT TYPE:</b> application/json
+<b>HEADERS:</b> [Accept=*/*, Content-Type=application/json]
+<b>BODY:</b> None</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:25:00 am</td>
+        <td>
+          <pre><b>RESPONSE</b>
+<b>Status:</b> 200
+<b>Content Type:</b> application/json
+<b>Body:</b>
+{
+    "createdBy": "Shankar JonesUpdate",
+    "priority": 2,
+    "severity": "High",
+    "title": "Button not working in my profile section",
+    "completed": false,
+    "bugId": "d5d93115-2001-4262-8609-1b245ca57063",
+    "createdOn": "2026-01-30T10:24:55.5961053",
+    "updatedOn": "2026-01-30T10:24:59.9621016"
+}
+<b>Response Headers:</b><br><b>Content-Type:</b> application/json<br><b>Transfer-Encoding:</b> chunked<br><b>Date:</b> Fri, 30 Jan 2026 04:55:00 GMT<br><b>Keep-Alive:</b> timeout=60<br><b>Connection:</b> keep-alive</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:25:00 am</td>
+        <td>
+          <a href='1769748900602.json' target='_blank'>Click to view full JSON response file</a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:25:00 am</td>
+        <td>
+          <span class='badge white-text green'>fetchBugById  is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deleteBugById is started</p>
+            <p class="text-sm">
+              <span>10:25:00 am</span> / <span>00:00:00:760</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deleteBugById is started</h5>
+<span class='badge badge-success'>01.30.2026 10:25:00 am</span>
+<span class='badge badge-danger'>01.30.2026 10:25:01 am</span>
+<span class='badge badge-default'>00:00:00:760</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:25:00 am</td>
+        <td>
+          <pre><b>REQUEST DETAILS:</b>
+<b>URI:</b> http://localhost:8090
+<b>METHOD:</b> DELETE
+<b>CONTENT TYPE:</b> application/json
+<b>HEADERS:</b> [Accept=*/*, Content-Type=application/json]
+<b>BODY:</b> None</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:25:01 am</td>
+        <td>
+          <pre><b>RESPONSE</b>
+<b>Status:</b> 200
+<b>Content Type:</b> application/json
+<b>Body:</b>
+{
+    "bugId": "d5d93115-2001-4262-8609-1b245ca57063",
+    "message": "Bug deleted"
+}
+<b>Response Headers:</b><br><b>Content-Type:</b> application/json<br><b>Transfer-Encoding:</b> chunked<br><b>Date:</b> Fri, 30 Jan 2026 04:55:01 GMT<br><b>Keep-Alive:</b> timeout=60<br><b>Connection:</b> keep-alive</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:25:01 am</td>
+        <td>
+          <a href='1769748901079.json' target='_blank'>Click to view full JSON response file</a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:25:01 am</td>
+        <td>
+          <span class='badge white-text green'>deleteBugById  is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 30, 2026 10:24:34 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 30, 2026 10:25:01 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>5</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>5</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='25%'><b>5</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>15</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"fetchAllBugs is started":16.196,"createBug is started":4.754,"updateBug is started":0.678,"fetchBugById is started":0.487,"deleteBugById is started":0.76
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 5,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 5,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 15
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
