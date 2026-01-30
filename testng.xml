@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+
+<listener class-name="allRestApi.listeners.MyListener" />
+</listeners>
+  <test thread-count="5" name="Test" preserve-order="true">
+    <classes>
+      <class name="allRestApi.BugValidationTest" >
+       <methods>
+           <include  name = "fetchAllBugs"/>
+           <include  name = "createBug"/>
+	       <include  name ="updateBug"/>
+	       <include  name = "fetchBugById"/>
+	       <include  name = "deleteBugById"/>
+       </methods>
+       </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
