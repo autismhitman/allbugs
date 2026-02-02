@@ -25,6 +25,13 @@ jobs:
     - name : what is in the target folder
       run : ls -a target
     - name : what is the reports folder
-      run : ls -a reports
-
-    
+      run : ls -a reports   
+      
+    - name: ExtentReports Upload a Build Artifact
+      uses: actions/upload-artifact@v6.0.0
+      with:
+           # Artifact name
+           name: ExtentReport
+           # A file, directory or wildcard pattern that describes what to upload
+           path: reports 
+           # The desired behavior if no files are found using the provided path.
