@@ -81,7 +81,7 @@ public class BugValidationTest extends BaseTest{
 		
 		return new Object[][] {
 			
-			{"Shankar JonesUpdate", "High", 2, "Button not working in my profile section",false}
+			{"Shankar JonesUpdate1", "High", 2, "Button not working in my profile section",false}
 			
 		};
 	}
@@ -92,6 +92,7 @@ public class BugValidationTest extends BaseTest{
 	 Response response= Apis.getBugById("/"+ context.getAttribute("bugId"));
 	 
 	 Assertions.assertThat(response.statusCode()).isEqualTo(200);
+	 
   
 	}
 	
