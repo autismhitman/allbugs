@@ -33,7 +33,7 @@ jobs:
           echo "latest_report=$latest_report" >> $GITHUB_OUTPUT
 
     - name: upload latest modified report
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
          name: latest_report
          path: ${{steps.find-latest-report.outputs.latest_report}}
@@ -47,7 +47,7 @@ jobs:
            path: reports 
            
     - name: Send mail
-      uses: dawidd6/action-send-mail@v3  
+      uses: dawidd6/action-send-mail@v4  
       with:  
         server_address: ${{secrets.EMAIL_SERVER_ADDRESS}}        
         server_port: ${{secrets.EMAIL_SERVER_PORT}}        
