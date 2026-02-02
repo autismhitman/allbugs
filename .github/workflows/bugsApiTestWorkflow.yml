@@ -36,26 +36,16 @@ jobs:
            path: reports 
            
     - name: Send mail
-      uses: dawidd6/action-send-mail@v8  
+      uses: dawidd6/action-send-mail@v3  
       with:  
-        server_address: ${{secrets.EMAIL_SERVER_ADDRESS}}
-        # Server port, default 25:
-        server_port: ${{secrets.EMAIL_SERVER_PORT}}
-        # Optional whether this connection use TLS (default is true if server_port is 465)
-        secure: true
-        # Optional (recommended) mail server username:
-        username: ${{secrets.EMAIL_ADDRESS}}
-        # Optional (recommended) mail server password:
-        password: ${{secrets.EMAIL_PASSWORD}}
-        # Required mail subject:
-        subject: Github Actions job result
-        # Required recipients' addresses:
-        to: restpostman1@gmail.com
-        # Required sender full name (address can be skipped):
-        from: ${{secrets.EMAIL_ADDRESS}}
-        # Optional plain body:
+        server_address: ${{secrets.EMAIL_SERVER_ADDRESS}}        
+        server_port: ${{secrets.EMAIL_SERVER_PORT}}        
+        secure: true        
+        username: ${{secrets.EMAIL_ADDRESS}}        
+        password: ${{secrets.EMAIL_PASSWORD}}        
+        subject: Github Actions job result        
+        to: restpostman1@gmail.com        
+        from: ${{secrets.EMAIL_ADDRESS}}       
         body: Build job of ${{github.repository}} completed successfully!
-     
-        # Optional attachments:
         attachments: reports
       
