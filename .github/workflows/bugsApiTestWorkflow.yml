@@ -29,17 +29,17 @@ jobs:
     - name: find latest  modified report
       id: find-latest-report
       run: |
-          latest_report= $(ls -t reports/* | head -n1)
-          echo "::set-output name=latest_report::$latest_report"
+          latest_report=$(ls -t reports/* | head -n1)         
+          echo "latest_report=$latest_report" >> $GITHUB_OUTPUT
 
     - name: upload latest modified report
-      uses: action/upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
          name: latest_report
          path: ${{steps.find-latest-report.outputs.latest_report}}
       
     - name: ExtentReports Upload a Build Artifact
-      uses: actions/upload-artifact@v6.0.0
+      uses: actions/upload-artifact@v4
       with:
            # Artifact name
            name: ExtentReport
