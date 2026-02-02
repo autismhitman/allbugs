@@ -30,7 +30,7 @@ jobs:
       id: find-latest-report
       run: |
           latest_report= $(ls -t reports/* | head -n1)
-          echo "::set-output name=latest_report::$latest_report
+          echo "::set-output name=latest_report::$latest_report"
 
     - name: upload latest modified report
       uses: action/upload-artifact@v2
