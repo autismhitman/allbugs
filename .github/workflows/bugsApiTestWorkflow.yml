@@ -24,5 +24,7 @@ jobs:
       run : ls -a
     - name : what is in the target folder
       run : ls -a target
+    - name : what is the reports folder
+      run ls -a reports
 
     
