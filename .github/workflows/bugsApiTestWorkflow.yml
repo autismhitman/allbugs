@@ -36,7 +36,7 @@ jobs:
            path: reports 
            
     - name: Send mail
-      uses: dawidd6/action-send-mail@v4>  
+      uses: dawidd6/action-send-mail@v8>  
       with:  
         server_address: ${{secrets.EMAIL_SERVER_ADDRESS}}
         # Server port, default 25:
