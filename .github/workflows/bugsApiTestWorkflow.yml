@@ -29,7 +29,7 @@ jobs:
     - name: find latest  modified report
       id: find-latest-report
       run: |
-          latest_report=$(ls -t reports/* | head -n1)         
+          latest_report=$(ls -t reports/* | head -n2)         
           echo "latest_report=$latest_report" >> $GITHUB_OUTPUT
 
     - name: upload latest modified report
