@@ -26,6 +26,17 @@ jobs:
       run : ls -a target
     - name : what is the reports folder
       run : ls -a reports   
+    - name: find latest  modified report
+      id: find-latest-report
+      run: |
+          latest_report= $(ls -t reports/* | head -n1)
+          echo "::set-output name=latest_report::$latest_report
+
+    - name: upload latest modified report
+      uses: action/upload-artifact@v2
+      with:
+         name: latest_report
+         path: ${{steps.find-latest-report.outputs.latest_report}}
       
     - name: ExtentReports Upload a Build Artifact
       uses: actions/upload-artifact@v6.0.0
@@ -47,5 +58,5 @@ jobs:
         to: restpostman1@gmail.com        
         from: ${{secrets.EMAIL_ADDRESS}}       
         body: Build job of ${{github.repository}} completed successfully!
-        attachments: reports/*
+        attachments: ${{steps.find-latest-report.outputs.latest_report}}
       
