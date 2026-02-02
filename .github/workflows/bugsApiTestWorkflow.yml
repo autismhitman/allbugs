@@ -47,5 +47,5 @@ jobs:
         to: restpostman1@gmail.com        
         from: ${{secrets.EMAIL_ADDRESS}}       
         body: Build job of ${{github.repository}} completed successfully!
-        attachments: reports/**
+        attachments: reports/*
       
