@@ -15,8 +15,7 @@ public class BugValidationTest extends BaseTest{
 	
 	
 	@Test
-	public void fetchAllBugs() {
-		
+	public void fetchAllBugs() {		
 	 Response response= Apis.getAllBugDetails();	 
 	 Assertions.assertThat(response.statusCode()).isEqualTo(200); 
 	 List<Bug> allBugs = response.as(new TypeRef<List<Bug>>() {});
@@ -107,7 +106,6 @@ public class BugValidationTest extends BaseTest{
 	 
   
 	}
-	
 	
 	
 
