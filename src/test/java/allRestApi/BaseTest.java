@@ -1,8 +1,6 @@
 package allRestApi;
 
 import org.testng.annotations.BeforeSuite;
-
-import allRestApi.utils.PropertyLoader;
 import allRestApi.utils.PropertyLoader;
 import io.restassured.RestAssured;
 
