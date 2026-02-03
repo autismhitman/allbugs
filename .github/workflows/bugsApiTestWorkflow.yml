@@ -20,5 +20,43 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: List all files
+      run : ls -a
+    - name : what is in the target folder
+      run : ls -a target
+    - name : what is the reports folder
+      run : ls -a reports   
+    - name: find latest  modified report
+      id: find-latest-report
+      run: |
+          latest_report=$(ls -t reports/* | head -n1)         
+          echo "latest_report=$latest_report" >> $GITHUB_OUTPUT
 
-    
+    - name: upload latest modified report
+      uses: actions/upload-artifact@v4
+      with:
+         name: latest_report
+         path: ${{steps.find-latest-report.outputs.latest_report}}
+      
+    - name: ExtentReports Upload a Build Artifact
+      uses: actions/upload-artifact@v4
+      with:
+           # Artifact name
+           name: ExtentReport
+           # A file, directory or wildcard pattern that describes what to upload
+           path: reports 
+           
+    - name: Send mail
+      uses: dawidd6/action-send-mail@v4  
+      with:  
+        server_address: ${{secrets.EMAIL_SERVER_ADDRESS}}        
+        server_port: ${{secrets.EMAIL_SERVER_PORT}}        
+        secure: true        
+        username: ${{secrets.EMAIL_ADDRESS}}        
+        password: ${{secrets.EMAIL_PASSWORD}}        
+        subject: Github Actions job result        
+        to: restpostman1@gmail.com        
+        from: ${{secrets.EMAIL_ADDRESS}}       
+        body: Build job of ${{github.repository}} completed successfully!
+        attachments: ${{steps.find-latest-report.outputs.latest_report}}
+      
