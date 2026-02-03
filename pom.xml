@@ -7,17 +7,45 @@
 	<properties>
 		<maven.compiler.target>17</maven.compiler.target>
 		<maven.compiler.source>17</maven.compiler.source>
-		<testng.version>7.11.0</testng.version>
+		<testng.version>7.11.0</testng.version>	 
+        <allure.version>2.32.0</allure.version>
+        <aspectj.version>1.9.20.1</aspectj.version>
+ 
 	</properties>
 
+	<dependencyManagement>
+	    <dependencies>
+	        <dependency>
+	            <groupId>io.qameta.allure</groupId>
+	            <artifactId>allure-bom</artifactId>
+	            <version>${allure.version}</version>
+	            <type>pom</type>
+	            <scope>import</scope>
+	        </dependency>
+	    </dependencies>
+	</dependencyManagement>
 
 	<dependencies>
+	 
+    <dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-testng</artifactId>
+        
+    </dependency>
+ 
 		<!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>${testng.version}</version>
 		</dependency>
+		
+		    <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+        
 		<!-- Source:
 		https://mvnrepository.com/artifact/tools.jackson.core/jackson-databind -->
 		<dependency>
@@ -97,10 +125,17 @@
         <configuration>
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
+          </suiteXmlFiles>    
+      
+        <argLine>
+            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+        </argLine>
+    </configuration>
   
+      </plugin>
+   
+    
+ 
 </plugins>
 </build>
 

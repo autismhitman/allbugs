@@ -11,6 +11,7 @@
       <class name="allRestApi.BugValidationTest" >
        <methods>
            <include  name = "fetchAllBugs"/>
+           <include  name = "totalCountBugs"/>
            <include  name = "createBug"/>
 	       <include  name ="updateBug"/>
 	       <include  name = "fetchBugById"/>
